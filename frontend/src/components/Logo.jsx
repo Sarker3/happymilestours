@@ -2,30 +2,36 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export const Logo = ({ light = false, compact = false }) => {
-  const dark = light ? "#FFFFFF" : "#163A2A";
-  const accent = "#E25E3E";
   return (
-    <Link to="/" data-testid="brand-logo" className="flex items-center gap-2 group">
-      <span className="relative inline-flex items-center justify-center w-10 h-10 rounded-full" style={{ background: dark }}>
-        <span className="absolute inset-[3px] rounded-full border border-white/40" />
-        <svg viewBox="0 0 24 24" fill="none" width="20" height="20" aria-hidden="true">
-          <path d="M3 18l5-8 4 5 3-4 6 7" stroke={accent} strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round" />
-          <circle cx="17" cy="6" r="2" fill={accent} />
-        </svg>
+    <Link to="/" data-testid="brand-logo" className="flex items-center gap-3 group">
+      <span
+        className={`inline-flex items-center justify-center rounded-2xl overflow-hidden transition-all ${
+          light
+            ? "bg-white shadow-lg ring-1 ring-white/30"
+            : "bg-white shadow-sm ring-1 ring-[#163A2A]/8"
+        }`}
+        style={{ width: 56, height: 56 }}
+      >
+        <img
+          src="/logo-happymiles.jpg"
+          alt="HappyMilesTours Logo"
+          className="w-full h-full object-contain"
+          loading="eager"
+        />
       </span>
       {!compact && (
         <span className="flex flex-col leading-none">
           <span
             className="font-serif-display text-xl tracking-tight"
-            style={{ color: dark, letterSpacing: "-0.01em" }}
+            style={{ color: light ? "#FFFFFF" : "#163A2A", letterSpacing: "-0.01em" }}
           >
-            Happy<span style={{ color: accent }}>Miles</span>Tours
+            Happy<span style={{ color: "#E25E3E" }}>Miles</span>Tours
           </span>
           <span
-            className="text-[10px] uppercase tracking-[0.32em] font-medium mt-0.5"
+            className="text-[10px] uppercase tracking-[0.32em] font-medium mt-1"
             style={{ color: light ? "rgba(255,255,255,0.7)" : "#4A5D54" }}
           >
-            Siliguri · Since 2024
+            Tours &amp; Travel · Siliguri
           </span>
         </span>
       )}
