@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useMemo } from "react";
+import React, { useCallback, useEffect, useState, useMemo } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { LogOut, Trash2, Phone, Mail, MessageCircle, Search, RefreshCw, Inbox, Calendar, TrendingUp } from "lucide-react";
 import { toast, Toaster } from "sonner";
@@ -21,19 +21,19 @@ export default function AdminInquiriesPage() {
   const { user, logout } = useAdminAuth();
   const nav = useNavigate();
 
-  const refresh = async () => {
+  const refresh = useCallback(async () => {
     setLoading(true);
     try {
       const [items, s] = await Promise.all([listInquiries(), adminStats()]);
       setInquiries(items);
       setStats(s);
-      if (items.length && !selected) setSelected(items[0]);
+      setSelected((current) => current || items[0] || null);
     } catch (e) {
       toast.error(e?.response?.data?.detail || "Failed to fetch inquiries");
     } finally { setLoading(false); }
-  };
+  }, []);
 
-  useEffect(() => { refresh(); /* eslint-disable-next-line */ }, []);
+  useEffect(() => { refresh(); }, [refresh]);
 
   const onLogout = () => { logout(); nav("/admin/login"); };
 
