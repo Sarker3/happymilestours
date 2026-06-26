@@ -69,7 +69,7 @@ export const DESTINATIONS = [
     description:
       "A high-altitude village ringed by snow peaks. Yumthang's rhododendron bloom and Zero Point's snowfields.",
     image:
-      "https://images.pexels.com/photos/2434269/pexels-photo-2434269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
+      "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
     highlights: ["Yumthang Valley", "Zero Point", "Hot Springs", "Bhim Nala Falls"],
   },
   {
@@ -90,7 +90,7 @@ export const PACKAGES = [
     id: "darjeeling-delight",
     name: "Darjeeling Delight",
     duration: "3N / 4D",
-    price: "₹ 11,499",
+    price: "On Demand",
     perPerson: true,
     cover:
       "https://images.pexels.com/photos/35151733/pexels-photo-35151733.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
@@ -102,7 +102,7 @@ export const PACKAGES = [
     id: "gangtok-getaway",
     name: "Gangtok Getaway",
     duration: "4N / 5D",
-    price: "₹ 15,999",
+    price: "On Demand",
     perPerson: true,
     cover:
       "https://images.pexels.com/photos/14916663/pexels-photo-14916663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
@@ -114,10 +114,10 @@ export const PACKAGES = [
     id: "north-sikkim",
     name: "North Sikkim Adventure",
     duration: "5N / 6D",
-    price: "₹ 22,499",
+    price: "On Demand",
     perPerson: true,
     cover:
-      "https://images.pexels.com/photos/2434269/pexels-photo-2434269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
+      "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
     highlights: ["Lachung village stay", "Yumthang Valley of Flowers", "Zero Point snow play", "Bhim Nala Falls"],
     includes: ["Hotel & guesthouse stay", "Sumo / Innova", "All inner-line permits", "All meals in North"],
     badge: "Adventure",
@@ -126,7 +126,7 @@ export const PACKAGES = [
     id: "pelling-kalimpong",
     name: "Pelling & Kalimpong Retreat",
     duration: "4N / 5D",
-    price: "₹ 14,499",
+    price: "On Demand",
     perPerson: true,
     cover:
       "https://images.pexels.com/photos/37494566/pexels-photo-37494566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
@@ -138,7 +138,7 @@ export const PACKAGES = [
     id: "grand-himalayan",
     name: "Grand Himalayan Circuit",
     duration: "8N / 9D",
-    price: "₹ 34,999",
+    price: "On Demand",
     perPerson: true,
     cover:
       "https://images.pexels.com/photos/12174800/pexels-photo-12174800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
@@ -150,7 +150,7 @@ export const PACKAGES = [
     id: "honeymoon-special",
     name: "Honeymoon Hideaway",
     duration: "5N / 6D",
-    price: "₹ 28,999",
+    price: "On Demand",
     perPerson: false,
     cover:
       "https://images.pexels.com/photos/14916663/pexels-photo-14916663.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
@@ -168,7 +168,7 @@ export const FLEET = [
     luggage: "2 large bags",
     ideal: "Couples & solo trips",
     image:
-      "https://images.pexels.com/photos/2876788/pexels-photo-2876788.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
+      "https://images.pexels.com/photos/3786091/pexels-photo-3786091.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
   },
   {
     name: "SUV",
@@ -177,7 +177,7 @@ export const FLEET = [
     luggage: "4 large bags",
     ideal: "Hill terrain & families",
     image:
-      "https://images.pexels.com/photos/35353704/pexels-photo-35353704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
+      "https://images.pexels.com/photos/1638459/pexels-photo-1638459.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
   },
   {
     name: "Innova",
@@ -195,7 +195,7 @@ export const FLEET = [
     luggage: "Large boot",
     ideal: "Groups & corporate tours",
     image:
-      "https://images.pexels.com/photos/35353704/pexels-photo-35353704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
+      "https://images.pexels.com/photos/2533092/pexels-photo-2533092.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1200",
   },
 ];
 
@@ -205,9 +205,9 @@ export const GALLERY = [
   "https://images.pexels.com/photos/37494566/pexels-photo-37494566.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
   "https://images.pexels.com/photos/33547415/pexels-photo-33547415.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
   "https://images.pexels.com/photos/12174800/pexels-photo-12174800.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
-  "https://images.pexels.com/photos/2434269/pexels-photo-2434269.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
-  "https://images.pexels.com/photos/35353704/pexels-photo-35353704.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
-  "https://images.pexels.com/photos/2901209/pexels-photo-2901209.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
+  "https://images.pexels.com/photos/1287145/pexels-photo-1287145.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
+  "https://images.pexels.com/photos/1271619/pexels-photo-1271619.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
+  "https://images.pexels.com/photos/147411/italy-mountains-dawn-daybreak-147411.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=600&w=800",
 ];
 
 export const TESTIMONIALS = [

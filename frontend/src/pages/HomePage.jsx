@@ -187,9 +187,9 @@ const Packages = () => (
               </ul>
               <div className="mt-6 pt-5 border-t border-[#163A2A]/10 flex items-end justify-between">
                 <div>
-                  <div className="text-[10px] uppercase tracking-widest text-[#4A5D54]">Starting</div>
+                  <div className="text-[10px] uppercase tracking-widest text-[#4A5D54]">Pricing</div>
                   <div className="font-serif-display text-2xl text-[#1E3A5F]">{p.price}</div>
-                  <div className="text-[11px] text-[#4A5D54]">{p.perPerson ? "per person" : "per couple"}</div>
+                  <div className="text-[11px] text-[#4A5D54]">Custom quote on inquiry</div>
                 </div>
                 <Link to="/contact" data-testid={`package-cta-${p.id}`} className="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-full bg-[#1E3A5F] text-white text-sm font-medium hover:bg-[#163A2A] transition-colors">
                   Book <ArrowRight size={14} />

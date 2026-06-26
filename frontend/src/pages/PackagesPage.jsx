@@ -87,9 +87,9 @@ export default function PackagesPage() {
 
                 <div className="mt-8 pt-6 border-t border-[#163A2A]/10 flex flex-col sm:flex-row sm:items-end justify-between gap-4">
                   <div>
-                    <div className="text-[10px] uppercase tracking-widest text-[#4A5D54]">Starting from</div>
+                    <div className="text-[10px] uppercase tracking-widest text-[#4A5D54]">Pricing</div>
                     <div className="font-serif-display text-3xl text-[#1E3A5F]">{p.price}</div>
-                    <div className="text-xs text-[#4A5D54]">{p.perPerson ? "per person on twin sharing" : "per couple, all-in"}</div>
+                    <div className="text-xs text-[#4A5D54]">Tailored to your dates, group size & stay preferences</div>
                   </div>
                   <Link to="/contact" data-testid={`pkg-cta-${p.id}`} className="inline-flex items-center gap-2 px-7 py-3.5 rounded-full btn-orange font-semibold">
                     Book this tour <ArrowRight size={16} />
