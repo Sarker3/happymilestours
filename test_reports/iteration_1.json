@@ -1,0 +1,25 @@
+{
+  "summary": "First-finish smoke testing for HappyMilesTours. All 5 backend endpoints verified via public REACT_APP_BACKEND_URL and frontend smoke tested end-to-end through Playwright (Home, Destinations, Packages w/ filter, About, Contact). Contact form submission persisted to DB and confirmed via GET /api/inquiries. Zero console errors across navigation flow.",
+  "tested_scope": ["backend", "frontend", "integration"],
+  "passed": [
+    "GET /api/ -> 200 with {message:'HappyMilesTours API', status:'ok'}",
+    "POST /api/inquiries valid payload -> 200 returns Inquiry with id and created_at",
+    "POST /api/inquiries missing fields -> 422 with pydantic missing-field details for email/phone/message",
+    "GET /api/inquiries -> 200 list including new inquiry, sorted desc by created_at (verified post-submit)",
+    "POST /api/status -> 200 and GET /api/status -> 200 (regression intact)",
+    "Home: hero-section, hero-cta-explore, hero-cta-rent visible",
+    "Navbar: all 5 nav items (home, destinations, packages, about-us, contact) present and navigable",
+    "Destinations page: all 6 destination-detail blocks (darjeeling, gangtok, pelling, kalimpong, lachung, tsomgo) rendered",
+    "Packages page: pkg-darjeeling-delight & pkg-gangtok-getaway rendered; filter-bestseller reduced visible cards 12 -> 2",
+    "About page: about-page testid visible",
+    "Contact: form filled (name/email/phone/message) and submitted via inquiry-submit; success toast 'Thanks! Your inquiry is in...' displayed",
+    "Inquiry persisted in MongoDB; GET /api/inquiries returns T1 Tester as latest entry",
+    "FloatingActions: whatsapp-floating-button and call-floating-button visible",
+    "Zero console errors observed during full page traversal"
+  ],
+  "failed": [],
+  "action_items": [],
+  "success_rate": {"backend": "100%", "frontend": "100%"},
+  "retest_needed": false,
+  "full_testing_deferred": true
+}
