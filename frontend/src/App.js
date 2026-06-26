@@ -9,6 +9,7 @@ import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
 import AdminLoginPage from "./pages/AdminLoginPage";
 import AdminInquiriesPage from "./pages/AdminInquiriesPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import { AdminAuthProvider, ProtectedAdminRoute } from "./lib/adminAuth";
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
               <Route path="/packages" element={<PackagesPage />} />
               <Route path="/about" element={<AboutPage />} />
               <Route path="/contact" element={<ContactPage />} />
+              <Route path="*" element={<NotFoundPage />} />
             </Route>
             <Route path="/admin/login" element={<AdminLoginPage />} />
             <Route
