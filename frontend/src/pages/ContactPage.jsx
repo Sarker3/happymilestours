@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, MessageCircle, Send, Check } from "lucide-react";
 import { toast, Toaster } from "sonner";
 import { BRAND, PACKAGES } from "../lib/data";
 
-const API = `${process.env.REACT_APP_BACKEND_URL}/api`;
+const API = `${process.env.REACT_APP_BACKEND_URL || ""}/api`;
 
 const INTERESTS = ["General Inquiry", "Car Rental", ...PACKAGES.map((p) => p.name)];
 

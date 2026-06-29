@@ -1,0 +1,11 @@
+[build]
+command = "cd frontend && yarn install --no-lockfile && yarn build"
+publish = "frontend/build"
+
+[functions]
+directory = "netlify/functions"
+
+[[redirects]]
+from = "/*"
+to = "/index.html"
+status = 200
