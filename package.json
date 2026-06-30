@@ -1,0 +1,15 @@
+{
+  "name": "happymilestours",
+  "version": "1.0.0",
+  "type": "module",
+  "dependencies": {
+    "@netlify/database": "^1.0.0",
+    "drizzle-orm": "beta",
+    "jose": "^5.0.0"
+  },
+  "devDependencies": {
+    "@netlify/functions": "^2.0.0",
+    "drizzle-kit": "beta",
+    "typescript": "^5.0.0"
+  }
+}
